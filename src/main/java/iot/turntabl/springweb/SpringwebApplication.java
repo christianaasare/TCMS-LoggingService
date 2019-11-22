@@ -49,7 +49,7 @@ public class SpringwebApplication {
 			};
 
 				jedis.ping();
-				jedis.subscribe(jedisPubSub, "cusotmerUpdates", "customerDelete","removed");
+				jedis.subscribe(jedisPubSub, "cusotmerUpdates", "customerDelete","removed","addcustomer","projectadded","projectdeleted","projectupdate");
 		}
 		catch (Exception e){
 			System.out.printf("Exception:::  "+e.getMessage());
